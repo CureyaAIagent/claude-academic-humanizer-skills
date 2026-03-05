@@ -1,8 +1,13 @@
+---
+name: evidence-citation-enhancer
+description: Strengthens academic credibility by ensuring that research claims are supported with appropriate scholarly evidence and citations.
+---
+
 # Evidence and Citation Enhancer
 
 ## Purpose
 
-Strengthens academic credibility by ensuring that claims are supported by appropriate scholarly evidence.
+Strengthens academic credibility by ensuring that claims within research manuscripts are supported by appropriate scholarly evidence.
 
 ## Key Responsibilities
 
@@ -13,7 +18,7 @@ Strengthens academic credibility by ensuring that claims are supported by approp
 
 ## Detection Targets
 
-Phrases that indicate unsupported claims:
+Identify phrases that often indicate unsupported claims:
 
 - "many researchers believe"
 - "it is widely known"
@@ -21,9 +26,9 @@ Phrases that indicate unsupported claims:
 
 ## Enhancement Strategy
 
-Replace unsupported statements with evidence-based phrasing:
+Replace unsupported statements with evidence-based phrasing.
 
-Example:
+### Example
 
 Instead of:
 
@@ -35,12 +40,12 @@ Use:
 
 ## Citation Integration
 
-Encourage referencing from:
+Encourage referencing from credible academic sources such as:
 
-- peer-reviewed journals
-- systematic reviews
-- authoritative institutions
+- Peer-reviewed journals
+- Systematic reviews
+- Authoritative research institutions
 
 ## Output
 
-Manuscript with stronger evidence support and improved academic credibility.
+Manuscript revised with stronger evidence support, appropriate citation integration, and improved academic credibility.
