@@ -93,7 +93,6 @@ workflow:
   step_4: Optimize keyword discoverability
   step_5: Evaluate interdisciplinary relevance
   step_6: Generate citation impact report
----
 
 output:
 
@@ -107,3 +106,4 @@ output:
     - Keyword Optimization Recommendations
     - Literature Positioning Improvements
     - Citation Strategy Suggestions
+---
