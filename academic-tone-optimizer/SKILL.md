@@ -1,3 +1,4 @@
+---
 # Academic Tone Optimizer
 
 ## Purpose
