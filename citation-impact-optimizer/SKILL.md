@@ -106,4 +106,3 @@ output:
     - Keyword Optimization Recommendations
     - Literature Positioning Improvements
     - Citation Strategy Suggestions
-...
