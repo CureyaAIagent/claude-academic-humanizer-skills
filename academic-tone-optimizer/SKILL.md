@@ -51,3 +51,4 @@ Writing style consistent with publications from major academic publishers such a
 ## Output
 
 Manuscript rewritten with consistent academic tone suitable for scholarly journals.
+---
