@@ -1,12 +1,12 @@
 ---
-claude_skill: "research_paper_verification"
+name: "research_paper_verification_skill"
 version: "1.0"
 description: >
-  End-to-end Claude skill for verifying academic research papers.
-  Includes reference & DOI verification, plagiarism checking, AI content
-  detection and removal, formatting compliance, and cross-verification
-  with past journal publications.
+  Claude skill for end-to-end verification of academic research papers.
+  Includes reference & DOI verification, plagiarism detection, AI content
+  removal, formatting compliance, and cross-verification with past journal publications.
 ---
+
 metadata:
   target_journal: "Specify journal here"
   manuscript_title: "Specify title here"
