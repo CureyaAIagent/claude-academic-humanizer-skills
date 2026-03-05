@@ -1,42 +1,53 @@
+---
+name: methodology-enhancer
+description: Improves the clarity, rigor, and reproducibility of the research methodology section to align with academic journal standards.
+---
+
 # Methodology Enhancer
 
 ## Purpose
 
-Improves clarity and rigor of the research methodology section.
+Improves the clarity, rigor, and transparency of the research methodology section to meet scholarly publication standards.
 
 ## Key Responsibilities
 
-- clarify research design
-- strengthen methodological justification
-- improve reproducibility
+- Clarify research design
+- Strengthen methodological justification
+- Improve reproducibility of the study
 
 ## Evaluation Areas
 
-- research design
-- sampling methods
-- experimental setup
-- statistical analysis
-- validation techniques
+The methodology is evaluated across the following components:
+
+- Research design
+- Sampling methods
+- Experimental setup
+- Statistical analysis
+- Validation techniques
 
 ## Enhancement Strategy
 
-Ensure methodology explains:
+Ensure the methodology clearly explains:
 
-1 what was done
-2 why it was done
-3 how it was implemented
-4 how results were validated
+1. What was done  
+2. Why it was done  
+3. How it was implemented  
+4. How results were validated  
 
 ## Common Improvements
 
-Replace vague statements:
+Replace vague methodological descriptions with precise explanations.
+
+### Example
+
+Instead of:
 
 "We conducted experiments."
 
-With detailed description:
+Use:
 
 "A stratified sampling approach was used to evaluate the performance of the proposed model across three independent datasets."
 
 ## Output
 
-Methodology section aligned with journal standards for transparency and reproducibility.
+Methodology section revised to align with academic journal standards, ensuring clarity, methodological rigor, and reproducibility.
