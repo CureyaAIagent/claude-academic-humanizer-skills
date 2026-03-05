@@ -1,8 +1,13 @@
+---
+name: linguistic-variation-engine
+description: Improves stylistic diversity and reduces repetitive sentence structures commonly found in automated or AI-generated academic text.
+---
+
 # Linguistic Variation Engine
 
 ## Purpose
 
-Improves stylistic diversity and reduces repetitive sentence structures commonly found in automated text.
+Improves stylistic diversity and reduces repetitive sentence structures commonly found in automated or AI-generated academic writing.
 
 ## Core Goals
 
@@ -13,7 +18,7 @@ Improves stylistic diversity and reduces repetitive sentence structures commonly
 
 ## Detection Mechanisms
 
-The engine analyzes:
+The engine analyzes the manuscript for:
 
 - Sentence length distribution
 - Lexical diversity
@@ -22,12 +27,12 @@ The engine analyzes:
 
 ## Editing Strategy
 
-When repetitive structures are detected:
+When repetitive linguistic patterns are detected, the system:
 
-- Vary sentence lengths
-- Introduce subordinate clauses
-- Replace repetitive vocabulary
-- Restructure sentences
+- Varies sentence lengths
+- Introduces subordinate clauses
+- Replaces repetitive vocabulary
+- Restructures sentences to improve flow
 
 ## Example
 
@@ -47,4 +52,4 @@ Optimized:
 
 ## Output
 
-Text with improved stylistic richness and natural writing variation.
+Text revised with improved stylistic richness, enhanced linguistic variation, and more natural academic writing flow.
