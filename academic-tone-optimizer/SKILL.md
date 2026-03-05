@@ -47,7 +47,7 @@ Use:
 ## Target Tone
 
 Writing style consistent with publications from major academic publishers such as Elsevier and Springer Nature.
-
+---
 
 ## Output
 
