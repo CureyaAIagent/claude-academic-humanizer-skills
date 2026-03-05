@@ -1,35 +1,40 @@
+---
+name: research-gap-detector
+description: Identifies research gaps in existing literature and helps articulate clear novelty and contribution within academic manuscripts.
+---
+
 # Research Gap Detector
 
 ## Purpose
 
-Identifies missing areas in current literature and articulates the research gap clearly.
+Identifies missing areas in existing literature and helps articulate the research gap clearly to establish the novelty of the manuscript.
 
 ## Responsibilities
 
-- analyze limitations of prior studies
-- identify unresolved research questions
-- clarify novelty of the manuscript
+- Analyze limitations of prior studies
+- Identify unresolved research questions
+- Clarify the novelty and contribution of the manuscript
 
 ## Gap Detection Strategy
 
-Evaluate literature for:
+Evaluate existing literature to detect:
 
-- inconsistent findings
-- methodological limitations
-- unexplored variables
-- limited datasets
-- lack of comparative analysis
+- Inconsistent findings across studies
+- Methodological limitations
+- Unexplored variables
+- Limited datasets
+- Lack of comparative analysis
 
 ## Gap Statement Framework
 
-Effective gap statements follow structure:
+Effective research gap statements follow the structure:
 
-Existing research → Limitation → Opportunity
+**Existing Research → Limitation → Opportunity**
 
-Example:
+### Example
 
 Although previous studies have examined machine learning models for disease prediction, limited research has evaluated model generalizability across multi-institution datasets.
 
 ## Output
 
-Clear research gap articulation supporting manuscript novelty.
+A clearly articulated research gap that highlights the novelty of the study and positions the manuscript within the broader research landscape.
