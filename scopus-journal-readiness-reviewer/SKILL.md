@@ -1,244 +1,155 @@
 ---
-name: scopus-journal-readiness-reviewer
-description: >
-  Senior SCOPUS reviewer simulation engine that evaluates research manuscripts
-  against Q1, Q2, and Q3 journal standards. The system verifies references,
-  citations, DOI validity, plagiarism risk, AI-generated text signals,
-  journal formatting compliance, and compares the manuscript with recent
-  publications from the target journal to determine journal readiness.
-
+name: journal-reference-citation-validator
+description: Validates references and in-text citations in research manuscripts to ensure compliance with journal author guidelines, detect citation mismatches, identify missing references, verify DOI links, and correct formatting according to required citation styles.
 version: "1.0"
 author: CUREEYA
-
-entry_point: system
-
-capabilities:
-  - SCOPUS Reviewer Simulation
-  - Journal Readiness Evaluation
-  - Citation and Reference Verification
-  - DOI Validation
-  - Plagiarism Risk Detection
-  - AI Content Detection
-  - Journal Formatting Compliance
-  - Literature Comparison Analysis
-  - Manuscript Improvement and Redrafting
-  - Q1 Q2 Q3 Journal Suitability Analysis
-
-objectives:
-  - Evaluate manuscript quality according to SCOPUS reviewer standards
-  - Verify citation integrity and reference accuracy
-  - Detect plagiarism risk and AI-generated writing patterns
-  - Compare manuscript with recently published papers in the target journal
-  - Ensure manuscript compliance with journal author guidelines
-  - Generate a journal-ready research manuscript
-
-reviewer_simulation:
-
-  reviewer_role: >
-    The system acts as a senior peer reviewer for SCOPUS indexed journals
-    and evaluates manuscripts with the rigor applied during the
-    formal peer review process.
-
-  journal_levels:
-    - Q1
-    - Q2
-    - Q3
-
-evaluation_categories:
-
-  research_novelty:
-    description: >
-      Evaluates whether the manuscript contributes new knowledge
-      or presents novel methodologies or frameworks.
-
-  literature_review_quality:
-    description: >
-      Evaluates completeness, relevance, and synthesis of prior studies.
-
-  methodological_rigor:
-    description: >
-      Assesses research design, experimental setup, statistical analysis,
-      and reproducibility of results.
-
-  experimental_validation:
-    description: >
-      Checks dataset reliability, benchmarking, and validation techniques.
-
-  argumentation_strength:
-    description: >
-      Examines logical reasoning, interpretation of results,
-      and linkage to theoretical frameworks.
-
-  writing_quality:
-    description: >
-      Evaluates clarity, academic tone, grammar, and readability.
-
-  citation_integrity:
-    description: >
-      Verifies whether all claims are supported by citations
-      and references follow academic standards.
-
-  research_currency:
-    description: >
-      Evaluates whether the manuscript reflects current
-      research trends and recent publications.
-
-citation_reference_verification:
-
-  checks:
-    - Verify that every in-text citation exists in the reference list
-    - Identify references listed but not cited
-    - Detect duplicate references
-    - Check reference formatting consistency
-    - Validate author names and publication year
-
-  doi_validation:
-    process:
-      - Extract DOI from references
-      - Verify DOI format
-      - Check DOI availability via official DOI registries
-      - Flag invalid or broken DOI links
-      - Suggest corrected DOI references if available
-
-plagiarism_analysis:
-
-  purpose: >
-    Estimate similarity risk before submission to plagiarism detection systems.
-
-  detection_parameters:
-    - repeated phrases
-    - structural similarity
-    - patchwriting patterns
-    - excessive quotations
-    - missing citations
-
-  similarity_risk_levels:
-    - Low Risk
-    - Moderate Risk
-    - High Risk
-
-ai_content_detection:
-
-  purpose: >
-    Detect linguistic patterns commonly associated with automated text
-    generation and ensure human-level academic writing style.
-
-  detection_features:
-    - repetitive sentence patterns
-    - uniform sentence length
-    - unnatural phrasing
-    - lack of analytical depth
-
-journal_comparison_analysis:
-
-  purpose: >
-    Compare the manuscript with recent publications from the
-    target journal to evaluate alignment with journal standards.
-
-  comparison_scope:
-
-    recent_papers_analysis:
-      number_of_papers: 5
-
-      parameters:
-        - structure and section organization
-        - citation density
-        - literature review depth
-        - methodology presentation
-        - writing style
-        - figure and table usage
-        - average paper length
-
-  alignment_check:
-    - introduction style comparison
-    - methodology depth comparison
-    - discussion style comparison
-    - citation patterns comparison
-
-journal_author_guideline_validation:
-
-  checks:
-    - manuscript structure compliance
-    - formatting rules
-    - citation style requirements
-    - reference formatting rules
-    - figure and table formatting
-    - section organization
-
-manuscript_improvement_engine:
-
-  improvements:
-    - correct citation formatting
-    - restructure weak sections
-    - improve academic tone
-    - strengthen literature synthesis
-    - enhance argumentation
-    - revise methodology clarity
-    - optimize discussion and implications
-
-journal_tier_estimation:
-
-  q1_characteristics:
-    - highly novel research contribution
-    - strong theoretical impact
-    - extensive literature coverage
-    - rigorous experimental validation
-
-  q2_characteristics:
-    - solid research contribution
-    - good methodological clarity
-    - adequate literature integration
-
-  q3_characteristics:
-    - moderate research contribution
-    - acceptable methodology
-    - limited novelty
-
-scoring_model:
-
-  research_novelty_score: "0-100"
-  literature_review_score: "0-100"
-  methodology_rigor_score: "0-100"
-  citation_integrity_score: "0-100"
-  writing_quality_score: "0-100"
-  plagiarism_risk_score: "0-100"
-  journal_alignment_score: "0-100"
-
-workflow:
-
-  step_1: Extract manuscript structure
-  step_2: Evaluate research novelty
-  step_3: analyze literature review quality
-  step_4: verify citations and references
-  step_5: validate DOI references
-  step_6: estimate plagiarism risk
-  step_7: detect AI-generated writing patterns
-  step_8: compare with recent journal publications
-  step_9: validate journal author guideline compliance
-  step_10: revise manuscript structure and citations
-  step_11: generate journal readiness report
-
-output:
-
-  report_name: SCOPUS Journal Readiness Report
-
-  sections:
-    - Research Novelty Score
-    - Literature Review Strength
-    - Methodology Rigor Score
-    - Citation and Reference Integrity
-    - DOI Validation Results
-    - Plagiarism Risk Assessment
-    - AI Content Detection Analysis
-    - Journal Comparison Analysis
-    - Journal Author Guideline Compliance
-    - Journal Tier Suitability Estimate
-    - Manuscript Improvement Recommendations
-    - Final Journal Readiness Decision
-
-  final_decision_levels:
-    - Journal Ready
-    - Minor Revision Required
-    - Major Revision Required
-    - Not Ready for Submission
 ---
+
+# Journal Reference Citation Validator
+
+## Purpose
+
+Ensures that all references and in-text citations in a research manuscript comply with academic publishing standards and the author guidelines of target journals.
+
+The system verifies citation accuracy, reference completeness, DOI validity, formatting consistency, and alignment with required citation styles.
+
+
+## Core Responsibilities
+
+- Detect incorrect citation formatting  
+- Verify citation–reference matching  
+- Identify missing references  
+- Detect unused references  
+- Validate citation style compliance  
+- Ensure references follow journal author guidelines  
+- Verify DOI validity and accessibility  
+- Recommend corrected citation formatting  
+
+## Citation Detection
+
+The system scans the manuscript and extracts all in-text citations.
+
+Supported citation formats include:
+
+- Author–Year format (APA, Harvard)
+- Numerical citations (IEEE, Vancouver)
+- Footnote citations (Chicago, MLA)
+
+## Reference Extraction
+
+The validator extracts the complete reference list and analyzes each entry.
+
+Each reference is checked for required components:
+
+- Author names
+- Publication year
+- Article title
+- Journal or book title
+- Volume and issue
+- Page numbers
+- DOI (if available)
+
+## Citation–Reference Matching
+
+The system verifies that every in-text citation corresponds to a reference entry.
+
+Common issues detected include:
+
+- citations present in text but missing from reference list
+- references listed but not cited
+- incorrect citation numbering
+- author–year mismatch
+- duplicate references
+
+## DOI Verification
+
+The validator checks the validity of DOI identifiers.
+
+Verification process:
+
+1. Extract DOI from each reference  
+2. Validate DOI format  
+3. Check DOI availability through official DOI registries  
+4. Flag broken or invalid DOI links  
+5. Recommend corrected DOI if available  
+
+Example DOI format:
+
+## Citation Style Validation
+
+The validator checks whether references follow the required citation style.
+
+Supported styles include:
+
+- APA
+- IEEE
+- Vancouver
+- Harvard
+- MLA
+- Chicago
+
+Example formatting rules:
+
+APA format example:
+
+Author, A. A. (Year). Title of article. *Journal Name*, Volume(Issue), Pages.
+
+IEEE format example:
+
+[1] A. Author, "Title of article," *Journal Name*, vol. X, no. X, pp. X–X, Year.
+
+## Journal Author Guideline Compliance
+
+The system evaluates whether the manuscript references follow formatting requirements specified in the target journal's author guidelines.
+
+Validation includes:
+
+- reference ordering rules
+- citation numbering format
+- punctuation and spacing standards
+- journal name abbreviations
+- DOI inclusion policies
+
+## Reference Consistency Analysis
+
+The system checks for inconsistencies across the reference list.
+
+Common issues include:
+
+- inconsistent author name formatting
+- inconsistent capitalization
+- mixed citation styles
+- inconsistent journal abbreviations
+
+## Reference Correction Strategy
+
+When formatting issues are detected, the system generates corrected reference entries.
+
+Corrections may include:
+
+- proper author formatting
+- corrected punctuation
+- consistent citation style
+- standardized journal names
+- verified DOI insertion
+
+## Output
+
+Reference and Citation Compliance Report
+
+The report includes:
+
+- Total in-text citations  
+- Total references  
+- Missing references  
+- Unused references  
+- Formatting inconsistencies  
+- Citation style errors  
+- DOI validation results  
+- Journal guideline compliance status  
+- Corrected reference formatting examples  
+- Citation correction recommendations  
+
+## Final Result
+
+A manuscript with fully validated references, corrected citation formatting, verified DOI links, and improved compliance with journal submission requirements.
