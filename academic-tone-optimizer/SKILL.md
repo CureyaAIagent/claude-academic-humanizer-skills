@@ -1,5 +1,9 @@
 ---
-# Academic-Tone-Optimizer
+name: academic-tone-optimizer
+description: Transforms informal, conversational, or AI-generated phrasing into formal academic language suitable for scholarly journal publications.
+---
+
+# Academic Tone Optimizer
 
 ## Purpose
 
@@ -14,20 +18,24 @@ Transforms informal, conversational, or AI-generated phrasing into formal academ
 
 ## Tone Transformation Rules
 
-Replace informal phrasing:
+Replace informal phrasing.
 
-Examples
+### Examples
 
 Instead of:
+
 "This paper talks about"
 
 Use:
+
 "This paper examines"
 
 Instead of:
+
 "We tried to check"
 
 Use:
+
 "This study evaluates"
 
 ## Linguistic Standards
@@ -47,9 +55,7 @@ Use:
 ## Target Tone
 
 Writing style consistent with publications from major academic publishers such as Elsevier and Springer Nature.
----
 
 ## Output
 
 Manuscript rewritten with consistent academic tone suitable for scholarly journals.
-
