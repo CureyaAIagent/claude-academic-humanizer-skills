@@ -1,5 +1,5 @@
 ---
-name: research-paper-verification-skill
+name: 'research-paper-verification-skill'
 version: "1.0"
 description: >
   Claude skill for end-to-end verification of academic research papers.
