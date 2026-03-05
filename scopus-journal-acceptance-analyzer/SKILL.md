@@ -1,94 +1,89 @@
+---
+name: scopus-journal-acceptance-probability-analyzer
+description: Evaluates whether a manuscript meets the quality expectations of SCOPUS-indexed journals and estimates the probability of acceptance before submission.
+---
+
 # SCOPUS Journal Acceptance Probability Analyzer
 
 ## Purpose
 
-The SCOPUS Journal Acceptance Probability Analyzer evaluates whether a manuscript meets the quality expectations of journals indexed in major scholarly databases.
+The SCOPUS Journal Acceptance Probability Analyzer evaluates whether a research manuscript meets the quality expectations of journals indexed in major scholarly databases.
 
-The goal is to estimate manuscript readiness and identify areas requiring improvement before submission.
-
----
+The goal is to estimate manuscript readiness and identify areas that require improvement before journal submission.
 
 ## Core Evaluation Categories
 
-The analyzer evaluates manuscripts across several critical dimensions.
+The analyzer evaluates manuscripts across several critical dimensions:
 
-Research Novelty  
-Literature Coverage  
-Methodological Rigor  
-Clarity of Contribution  
-Statistical Validity  
-Writing Quality  
-Journal Scope Alignment
-
----
+- Research Novelty  
+- Literature Coverage  
+- Methodological Rigor  
+- Clarity of Contribution  
+- Statistical Validity  
+- Writing Quality  
+- Journal Scope Alignment  
 
 ## Acceptance Risk Levels
 
-High Probability of Acceptance  
-Moderate Probability  
-Needs Major Revision  
-Low Probability
+Manuscripts are classified into the following acceptance probability categories:
 
----
+- High Probability of Acceptance  
+- Moderate Probability  
+- Needs Major Revision  
+- Low Probability  
 
 ## Analysis Workflow
 
-1 Analyze manuscript structure
-2 Evaluate research novelty
-3 assess literature review quality
-4 evaluate methodological rigor
-5 check argument coherence
-6 assess language clarity
-
----
+1. Analyze manuscript structure  
+2. Evaluate research novelty  
+3. Assess literature review quality  
+4. Evaluate methodological rigor  
+5. Check argument coherence  
+6. Assess language clarity  
 
 ## Novelty Detection
 
-The analyzer checks whether the manuscript clearly states:
+The analyzer verifies whether the manuscript clearly articulates:
 
-research gap  
-unique contribution  
-novel methodology  
-new dataset  
-improved model or framework
-
----
+- Research gap  
+- Unique contribution  
+- Novel methodology  
+- New dataset  
+- Improved model or framework  
 
 ## Scope Alignment Check
 
-The system verifies whether the manuscript topic aligns with the target journal scope.
+The system verifies whether the manuscript topic aligns with the scope of the target journal.
 
-Misalignment is one of the most common reasons for desk rejection.
-
----
+Scope misalignment is one of the most common causes of **desk rejection** in academic publishing.
 
 ## Quality Indicators
 
-Indicators of high acceptance probability:
+Indicators associated with high acceptance probability include:
 
-clear research gap  
-strong literature synthesis  
-well-defined methodology  
-robust experimental validation  
-clear discussion of implications
-
----
+- Clear research gap  
+- Strong literature synthesis  
+- Well-defined methodology  
+- Robust experimental validation  
+- Clear discussion of implications  
 
 ## Output Report
 
+### Manuscript Acceptance Readiness Report
+
 Example output:
 
-Manuscript Acceptance Readiness Report
+- Novelty Score: High  
+- Methodological Strength: Moderate  
+- Literature Coverage: Strong  
+- Writing Quality: Strong  
 
-Novelty Score: High  
-Methodological Strength: Moderate  
-Literature Coverage: Strong  
-Writing Quality: Strong  
+### Estimated Acceptance Probability
 
-Estimated Acceptance Probability: Moderate
+Moderate
 
-Recommended Actions:
+### Recommended Actions
 
-clarify research contribution  
-expand discussion section  
-strengthen dataset description
+- Clarify research contribution  
+- Expand discussion section  
+- Strengthen dataset description
