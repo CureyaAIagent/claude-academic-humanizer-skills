@@ -11,8 +11,6 @@ Ensures that all references and in-text citations in a research manuscript compl
 
 The system verifies citation accuracy, reference completeness, formatting consistency, and alignment with required citation styles.
 
----
-
 ## Core Responsibilities
 
 - Detect incorrect citation formatting
@@ -23,8 +21,6 @@ The system verifies citation accuracy, reference completeness, formatting consis
 - Ensure references follow journal author guidelines
 - Recommend corrected citation formatting
 
----
-
 ## Citation Detection
 
 The system scans the manuscript and extracts all in-text citations.
@@ -34,8 +30,6 @@ Supported citation formats include:
 - Author–Year format (APA, Harvard)
 - Numerical citations (IEEE, Vancouver)
 - Footnote citations (Chicago, MLA)
-
----
 
 ## Reference Extraction
 
@@ -51,8 +45,6 @@ Each reference is checked for required components:
 - Page numbers
 - DOI (if available)
 
----
-
 ## Citation–Reference Matching
 
 The system verifies that every in-text citation corresponds to a reference entry.
@@ -64,8 +56,6 @@ Common issues detected include:
 - incorrect citation numbering
 - author–year mismatch
 - duplicate references
-
----
 
 ## Citation Style Validation
 
@@ -90,8 +80,6 @@ IEEE format example:
 
 [1] A. Author, "Title of article," *Journal Name*, vol. X, no. X, pp. X–X, Year.
 
----
-
 ## Journal Author Guideline Compliance
 
 The system evaluates whether the manuscript references follow the formatting requirements specified in the target journal's author guidelines.
@@ -104,8 +92,6 @@ Validation includes:
 - journal name abbreviations
 - DOI inclusion policies
 
----
-
 ## Reference Consistency Analysis
 
 The system checks for inconsistencies across the reference list.
@@ -117,8 +103,6 @@ Common issues include:
 - mixed citation styles
 - inconsistent journal abbreviations
 
----
-
 ## Reference Correction Strategy
 
 When formatting issues are detected, the system generates corrected reference entries.
@@ -129,8 +113,6 @@ Corrections may include:
 - corrected punctuation
 - consistent citation style
 - standardized journal names
-
----
 
 ## Output
 
