@@ -6,7 +6,6 @@ description: >
   citations, DOI validity, plagiarism risk, AI-generated text signals,
   journal formatting compliance, and compares the manuscript with recent
   publications from the target journal to determine journal readiness.
-  ---
 
 version: "1.0"
 author: CUREEYA
@@ -242,3 +241,4 @@ output:
     - Minor Revision Required
     - Major Revision Required
     - Not Ready for Submission
+---
