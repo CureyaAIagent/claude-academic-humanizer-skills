@@ -1,5 +1,5 @@
 ---
-# Academic Tone Optimizer
+# Academic-Tone-Optimizer
 
 ## Purpose
 
@@ -48,7 +48,8 @@ Use:
 
 Writing style consistent with publications from major academic publishers such as Elsevier and Springer Nature.
 
+
 ## Output
 
 Manuscript rewritten with consistent academic tone suitable for scholarly journals.
----
+
