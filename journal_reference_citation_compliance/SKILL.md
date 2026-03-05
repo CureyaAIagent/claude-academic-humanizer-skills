@@ -1,270 +1,155 @@
 ---
-name: journal-reference-citation-compliance
-description: >
-  Validates references and in-text citations in academic manuscripts to ensure
-  compliance with journal author guidelines. The skill checks citation style
-  formatting, reference completeness, citation-reference matching, and
-  adherence to journal submission requirements. It detects citation errors,
-  formatting inconsistencies, missing references, and provides corrected
-  reference formatting according to the required citation style.
-
-version: "1.0"
-author: CUREEYA
-
-entry_point: system
-
-capabilities:
-  - Reference Formatting Validation
-  - Citation Style Compliance
-  - In-text Citation Detection
-  - Citation-Reference Matching
-  - Journal Author Guideline Compliance
-  - Reference Completeness Check
-  - Citation Consistency Analysis
-  - Reference Formatting Correction
-  - Bibliographic Integrity Verification
-
-inputs:
-  manuscript_text:
-    type: string
-    description: Full manuscript text including references.
-
-  reference_section:
-    type: string
-    description: Extracted bibliography or reference list.
-
-  target_journal:
-    type: string
-    description: Name of the journal for guideline verification.
-    optional: true
+name: journal-reference-citation-validator
+description: Validates references and in-text citations in research manuscripts to ensure compliance with journal author guidelines, detect citation mismatches, identify missing references, and correct formatting according to required citation styles.
+---
 
-  citation_style:
-    type: string
-    description: Citation style used by the manuscript (APA, IEEE, Harvard, Vancouver, MLA, Chicago).
-    optional: true
+# Journal Reference Citation Validator
 
-system_prompt: |
+## Purpose
 
-  You are an Academic Reference Compliance Auditor and Journal Formatting Specialist.
+Ensures that all references and in-text citations in a research manuscript comply with academic publishing standards and the author guidelines of target journals.
 
-  Your responsibility is to verify that references and in-text citations in a
-  research manuscript follow the formatting and structural requirements of
-  academic journals.
+The system verifies citation accuracy, reference completeness, formatting consistency, and alignment with required citation styles.
 
-  The system must ensure that:
+---
 
-  - All citations are properly referenced.
-  - Reference entries follow the correct citation style.
-  - References contain complete bibliographic information.
-  - Citation formatting matches journal author guidelines.
-  - In-text citations correctly correspond to the reference list.
+## Core Responsibilities
 
-  The system must also recommend corrections to improve compliance with
-  journal publication standards.
+- Detect incorrect citation formatting
+- Verify citation–reference matching
+- Identify missing references
+- Detect unused references
+- Validate citation style compliance
+- Ensure references follow journal author guidelines
+- Recommend corrected citation formatting
 
-processing_pipeline:
+---
 
-  step_1_extract_citations:
-    description: |
-      Scan the manuscript and extract all in-text citations.
+## Citation Detection
 
-      Detect citation patterns such as:
+The system scans the manuscript and extracts all in-text citations.
 
-      - Author-year format (APA/Harvard)
-      - Numerical citations (IEEE/Vancouver)
-      - Footnote-based citations (Chicago/MLA)
+Supported citation formats include:
 
-      Store each detected citation for matching analysis.
+- Author–Year format (APA, Harvard)
+- Numerical citations (IEEE, Vancouver)
+- Footnote citations (Chicago, MLA)
 
-  step_2_extract_references:
-    description: |
-      Extract the reference list from the manuscript.
+---
 
-      Identify each reference entry and parse bibliographic fields:
+## Reference Extraction
 
-      - author names
-      - article title
-      - journal name
-      - publication year
-      - volume
-      - issue
-      - page numbers
-      - DOI (if available)
+The validator extracts the complete reference list and analyzes each entry.
 
-  step_3_citation_reference_matching:
-    description: |
-      Match each in-text citation with a reference entry.
+Each reference is checked for required components:
 
-      Detect the following issues:
+- Author names
+- Publication year
+- Article title
+- Journal or book title
+- Volume and issue
+- Page numbers
+- DOI (if available)
 
-      - citations present in text but missing in reference list
-      - references listed but never cited
-      - incorrect citation numbering
-      - author-year mismatch
-      - duplicate references
+---
 
-  step_4_reference_completeness_check:
-    description: |
-      Verify that each reference contains complete bibliographic details.
+## Citation–Reference Matching
 
-      Required elements include:
+The system verifies that every in-text citation corresponds to a reference entry.
 
-      - author names
-      - publication year
-      - article title
-      - journal or book title
-      - volume and issue
-      - page numbers
-      - DOI (when available)
+Common issues detected include:
 
-      Flag references with missing information.
+- citations present in text but missing from reference list
+- references listed but not cited
+- incorrect citation numbering
+- author–year mismatch
+- duplicate references
 
-  step_5_citation_style_validation:
-    description: |
-      Validate formatting according to the specified citation style.
+---
 
-      Example rules:
+## Citation Style Validation
 
-      APA:
-        Author, A. A. (Year). Title. Journal, Volume(Issue), Pages.
+The validator checks whether references follow the required citation style.
 
-      IEEE:
-        [Number] Author initials. Author surname, "Title," Journal,
-        vol., no., pp., year.
+Supported styles include:
 
-      Vancouver:
-        Author surname Initials. Title. Journal. Year;Volume(Issue):Pages.
+- APA
+- IEEE
+- Vancouver
+- Harvard
+- MLA
+- Chicago
 
-      Identify formatting inconsistencies and deviations.
+Example formatting rules:
 
-  step_6_journal_guideline_compliance:
-    description: |
-      Evaluate whether the manuscript references follow the
-      author guidelines of the target journal.
+APA format example:
 
-      Verify:
+Author, A. A. (Year). Title of article. *Journal Name*, Volume(Issue), Pages.
 
-      - reference ordering rules
-      - citation numbering style
-      - punctuation standards
-      - abbreviation of journal names
-      - DOI inclusion policies
+IEEE format example:
 
-      Flag any formatting violations.
+[1] A. Author, "Title of article," *Journal Name*, vol. X, no. X, pp. X–X, Year.
 
-  step_7_reference_consistency_analysis:
-    description: |
-      Detect inconsistencies across references.
+---
 
-      Common issues include:
+## Journal Author Guideline Compliance
 
-      - inconsistent author name formatting
-      - inconsistent capitalization
-      - inconsistent journal abbreviations
-      - mixed citation styles
+The system evaluates whether the manuscript references follow the formatting requirements specified in the target journal's author guidelines.
 
-  step_8_reference_correction_recommendation:
-    description: |
-      Generate corrected reference formatting based on
-      the specified citation style.
+Validation includes:
 
-      Provide properly formatted references
-      and corrected in-text citation examples.
+- reference ordering rules
+- citation numbering format
+- punctuation and spacing standards
+- journal name abbreviations
+- DOI inclusion policies
 
-validation_rules:
+---
 
-  citation_integrity:
-    - Every in-text citation must correspond to a reference entry.
-    - Every reference entry should appear at least once in the text.
-    - Citation numbering must follow sequential order (for numeric styles).
+## Reference Consistency Analysis
 
-  formatting_rules:
-    - References must follow the specified citation style.
-    - Author names must be consistently formatted.
-    - Titles must follow correct capitalization rules.
-    - Journal names must follow standard abbreviation guidelines if required.
+The system checks for inconsistencies across the reference list.
 
-  completeness_rules:
-    - Each reference must include core bibliographic components.
-    - Missing fields should be flagged for correction.
+Common issues include:
 
-analysis_outputs:
+- inconsistent author name formatting
+- inconsistent capitalization
+- mixed citation styles
+- inconsistent journal abbreviations
 
-  citation_integrity_report:
-    description: |
-      Summary of citation-reference matching results.
+---
 
-      Includes:
+## Reference Correction Strategy
 
-      - total in-text citations
-      - unmatched citations
-      - unused references
+When formatting issues are detected, the system generates corrected reference entries.
 
-  reference_formatting_report:
-    description: |
-      Evaluation of reference formatting quality.
+Corrections may include:
 
-      Includes detected style inconsistencies and formatting errors.
+- proper author formatting
+- corrected punctuation
+- consistent citation style
+- standardized journal names
 
-  journal_compliance_report:
-    description: |
-      Assessment of whether the manuscript follows
-      the target journal's author guidelines.
+---
 
-  corrected_reference_list:
-    description: |
-      Fully corrected reference entries formatted
-      according to the specified citation style.
+## Output
 
-  citation_correction_suggestions:
-    description: |
-      Suggested corrections for in-text citations
-      that do not match the reference list.
+Reference and Citation Compliance Report
 
-risk_levels:
+The report includes:
 
-  compliant:
-    description: >
-      References and citations fully comply with journal guidelines.
+- Total in-text citations
+- Total references
+- Missing references
+- Unused references
+- Formatting inconsistencies
+- Citation style errors
+- Journal guideline compliance status
+- Corrected reference formatting examples
+- Citation correction recommendations
 
-  minor_issues:
-    description: >
-      Minor formatting inconsistencies detected.
+---
 
-  major_revision_required:
-    description: >
-      Significant citation mismatches or formatting issues detected.
+## Final Result
 
-final_output_format: |
-
-  Reference and Citation Compliance Report
-
-  Total In-text Citations: X
-  Total References: X
-
-  Unmatched Citations: X
-  Unused References: X
-
-  Formatting Errors Detected:
-  - Reference 4 missing page numbers
-  - Reference 7 inconsistent author formatting
-
-  Journal Guideline Compliance:
-  Moderate
-
-  Recommended Corrections:
-
-  Reference 4 (Correct Format Example):
-
-  Author A., Author B. (2022). Title of Article.
-  Journal Name. 15(2): 120-134.
-
-  Citation Correction Example:
-
-  Incorrect:
-  (Smith, 2021)
-
-  Correct:
-  Smith et al. (2021)
-
-  Overall Citation Compliance Score: 0–100
+A manuscript with fully validated references, corrected citation formatting, and improved compliance with journal submission requirements.
