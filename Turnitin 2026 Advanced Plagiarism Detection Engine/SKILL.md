@@ -1,6 +1,8 @@
 ---
-  system_name: "Turnitin 2026 Advanced Plagiarism Detection Engine"
-  version: "4.2.1-2026"
+  name: turnitin-2026-advanced-plagiarism-detection
+  description: Advanced AI-powered plagiarism detection engine with semantic analysis, blockchain verification, AI-content detection, and multi-database academic similarity scanning for journal submissions and research verification.
+version: 4.2.1
+author: Cureeya Research Systems
   architecture: "Multi-layer Neural Network with Blockchain Verification"
 ---
   
