@@ -1,5 +1,5 @@
 ---
-name: advanced-statistical-analysis-and-mathematical-validation-system-2026
+name: advanced-statistical-analysis-and-validation-system
 description: "Comprehensive mathematical and statistical validation tool for research paper verification with 100% accuracy assurance"
 ---
 claud_skills:
