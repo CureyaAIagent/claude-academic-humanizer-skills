@@ -1,6 +1,6 @@
 ---
-name: advanced-statistical-analysis-and-validation-system
-description: "Comprehensive mathematical and statistical validation tool for research paper verification with 100% accuracy assurance"
+name: advanced-statistical-analysis
+description: "statistical validation tool with 100% accuracy assurance"
 ---
 claud_skills:
   system_name: "Statistical Validation Engine 2026"
