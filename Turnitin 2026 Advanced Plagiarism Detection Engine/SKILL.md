@@ -1,5 +1,5 @@
 ---
-name: Turnitin-2026-Advanced-Plagiarism-Detection-System
+name: turnitin-2026-advanced-plagiarism-detection-system
 description: Comprehensive plagiarism detection system for academic journal paper review with <10% threshold validation
 ---
 claud_skills:
