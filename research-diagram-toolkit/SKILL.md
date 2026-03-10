@@ -1,7 +1,7 @@
 ---
-  name: research-diagram-toolkit
-  overview:"Professional-grade diagram creation system for academic publications"
- --- 
+name: research-diagram-toolkit
+overview: "Professional-grade diagram creation system for academic publications"
+---
   core_principles:
     authenticity: "Hand-crafted appearance mimicking expert researcher work"
     publication_ready: "Journal acceptance guaranteed with proper formatting"
