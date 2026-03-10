@@ -2,28 +2,29 @@
 name: research-diagram-toolkit
 overview: "Professional-grade diagram creation system for academic publications"
 ---
-  core_principles:
-    authenticity: "Hand-crafted appearance mimicking expert researcher work"
-    publication_ready: "Journal acceptance guaranteed with proper formatting"
-    field_specific: "Domain-appropriate visualization standards"
-    reproducible: "Fully documented workflow for peer review"
 
-  engineering_visualizations:
-    
-    system_architecture_diagrams:
-      tools:
-        - name: "draw.io (diagrams.net)"
-          version: "20.3+"
-          usage: "Block diagrams, flowcharts, system components"
-          humanization_techniques:
-            - "Manual spacing adjustments"
-            - "Custom color schemes matching journal style"
-            - "Hand-drawn connector lines for organic feel"
-          export_formats:
-            - "PDF (vector)"
-            - "EPS for LaTeX integration"
-            - "PNG at 600 DPI minimum"
-      
+core_principles:
+  authenticity: "Hand-crafted appearance mimicking expert researcher work"
+  publication_ready: "Journal acceptance guaranteed with proper formatting"
+  field_specific: "Domain-appropriate visualization standards"
+  reproducible: "Fully documented workflow for peer review"
+
+engineering_visualizations:
+
+  system_architecture_diagrams:
+    tools:
+      - name: "draw.io (diagrams.net)"
+        version: "20.3+"
+        usage: "Block diagrams, flowcharts, system components"
+        humanization_techniques:
+          - "Manual spacing adjustments"
+          - "Custom color schemes matching journal style"
+          - "Hand-drawn connector lines for organic feel"
+        export_formats:
+          - "PDF (vector)"
+          - "EPS for LaTeX integration"
+          - "PNG at 600 DPI minimum"
+
       - name: "Inkscape"
         version: "1.3+"
         usage: "Refinement of automated diagrams, custom illustrations"
@@ -36,12 +37,16 @@ overview: "Professional-grade diagram creation system for academic publications"
           - "SVG for editing flexibility"
           - "EPS for professional printing"
 
-    circuit_and_signal_processing:
-      tools:
-        - name: "LTspice"
-          version: "XVII"
-          usage: "Circuit schematics, simulation results"
-        
+  circuit_and_signal_processing:
+    tools:
+      - name: "LTspice"
+        version: "XVII"
+        usage: "Circuit schematics, simulation results"
+
+      - name: "MATLAB/Simulink"
+        version: "R2023b"
+        usage: "Signal flow graphs, control systems"
+
         - name: "MATLAB/Simulink"
           version: "R2023b"
           usage: "Signal flow graphs, control systems"
@@ -53,7 +58,7 @@ overview: "Professional-grade diagram creation system for academic publications"
             - "pgfplots"
             - "tikz-cd"
 
-  economics_commerce_visualizations:
+economics_commerce_visualizations:
     
     data_analysis_diagrams:
       tools:
@@ -83,7 +88,7 @@ overview: "Professional-grade diagram creation system for academic publications"
             - "Manual legend placement"
             - "Axis label positioning refinement"
 
-    market_analysis_frameworks:
+market_analysis_frameworks:
       tools:
         - name: "Lucidchart"
           features:
@@ -95,7 +100,7 @@ overview: "Professional-grade diagram creation system for academic publications"
             - "Brand color implementation"
             - "Consistent typography hierarchy"
 
-  interdisciplinary_tools:
+interdisciplinary_tools:
     
     conceptual_framework_mapping:
       primary_tool: "Miro"
@@ -108,7 +113,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Vector editing in Illustrator/Inkscape"
         - "Final touch-up for academic presentation"
         
-    network_and_relationship_diagrams:
+network_and_relationship_diagrams:
       tools:
         - name: "Gephi"
           version: "0.9.2"
@@ -121,7 +126,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - name: "Graphviz"
           applications: "Automated graph layout, programmatic generation"
 
-  professional_workflow_standards:
+professional_workflow_standards:
     
     file_management:
       directory_structure:
@@ -134,8 +139,8 @@ overview: "Professional-grade diagram creation system for academic publications"
       naming_convention: 
         pattern: "{figure_number}_{description}_{version}.{extension}"
         example: "fig_03_market_share_analysis_v04.pdf"
-        
-    quality_assurance:
+      
+quality_assurance:
       checklist:
         - "Resolution check (minimum 600 DPI for print)"
         - "Font embedding verification"
@@ -144,7 +149,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Accessibility compliance (alt text, contrast ratios)"
         - "Cross-platform rendering consistency"
 
-  advanced_techniques:
+advanced_techniques:
     
     latex_integration:
       tikz_methodology:
@@ -170,7 +175,7 @@ overview: "Professional-grade diagram creation system for academic publications"
           \addplot+[smooth] table[x=time,y=value] {data.csv};
           \end{axis}
 
-    hybrid_creation_process:
+hybrid_creation_process:
       step_by_step:
         1: "Data preparation and cleaning"
         2: "Initial automated plot generation"
@@ -179,7 +184,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         5: "Integration with document workflow"
         6: "Quality assurance and final export"
 
-  journal_submission_requirements:
+journal_submission_requirements:
     
     common_specifications:
       ieee:
@@ -207,9 +212,8 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Open formats preferred over proprietary"
         - "Version control documentation maintained"
         
-  expert_tips_for_humanization:
-    
-    avoiding_automated_appearance:
+expert_tips_for_humanization:
+  avoiding_automated_appearance:
       techniques:
         - "Introduce slight variations in element spacing"
         - "Use non-uniform line weights intentionally"
@@ -218,7 +222,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Avoid perfect geometric alignments"
         - "Vary font weights and styles purposefully"
         
-    time_efficient_methods:
+time_efficient_methods:
       shortcuts:
         - "Template libraries for common diagram types"
         - "Style sheets for consistent appearance"
@@ -226,7 +230,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Keyboard shortcuts mastery"
         - "Pre-defined color palettes per discipline"
 
-  software_ecosystem:
+software_ecosystem:
     
     primary_suite:
       vector_graphics: ["Inkscape", "Adobe Illustrator"]
@@ -234,18 +238,18 @@ overview: "Professional-grade diagram creation system for academic publications"
       data_visualization: ["R/ggplot2", "Python/matplotlib"]
       technical_drawing: ["TikZ/LaTeX", "Graphviz"]
       
-    complementary_tools:
+complementary_tools:
       image_editing: "GIMP"
       pdf_management: "Adobe Acrobat Pro"
       version_control: "Git with Git-LFS for large files"
       collaboration: "Overleaf for LaTeX projects"
       
-    platform_consistency:
+platform_consistency:
       windows_optimized: "PowerPoint for quick mockups"
       mac_optimized: "Keynote for presentation integration"
       linux_friendly: "All open-source alternatives available"
 
-  documentation_and_reproducibility:
+documentation_and_reproducibility:
     
     metadata_standards:
       required_fields:
@@ -255,7 +259,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "Processing steps taken"
         - "Final output specifications"
         
-    sharing_protocols:
+sharing_protocols:
       git_repository_structure:
         - "README.md explaining methodology"
         - "requirements.txt or environment.yml"
@@ -264,7 +268,7 @@ overview: "Professional-grade diagram creation system for academic publications"
         - "final_figures/ directory"
         - "LICENSE file for reuse permissions"
 
-  validation_checklist:
+validation_checklist:
     
     pre_submission:
       technical_validation:
