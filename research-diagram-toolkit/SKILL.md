@@ -1,6 +1,6 @@
 ---
 name: research-diagram-toolkit
-overview: "Professional-grade diagram creation system for academic publications"
+description: "Professional-grade diagram creation system for academic publications"
 ---
 
 core_principles:
