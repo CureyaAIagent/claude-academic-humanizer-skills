@@ -1,290 +1,225 @@
 ---
 name: research-diagram-toolkit
-description: Professional-grade diagram creation system for academic publications.
+description: Generates professional, publication-ready academic diagrams and figures that mimic manually created visuals used in peer-reviewed journals.
 ---
 
-core_principles:
-  authenticity: "Hand-crafted appearance mimicking expert researcher work"
-  publication_ready: "Journal acceptance guaranteed with proper formatting"
-  field_specific: "Domain-appropriate visualization standards"
-  reproducible: "Fully documented workflow for peer review"
+# Research Diagram Toolkit
 
-engineering_visualizations:
+## Purpose
 
-  system_architecture_diagrams:
-    tools:
-      - name: "draw.io (diagrams.net)"
-        version: "20.3+"
-        usage: "Block diagrams, flowcharts, system components"
-        humanization_techniques:
-          - "Manual spacing adjustments"
-          - "Custom color schemes matching journal style"
-          - "Hand-drawn connector lines for organic feel"
-        export_formats:
-          - "PDF (vector)"
-          - "EPS for LaTeX integration"
-          - "PNG at 600 DPI minimum"
+Provides a structured workflow for creating **journal-grade academic diagrams** that replicate the visual style commonly found in peer-reviewed publications.
 
-      - name: "Inkscape"
-        version: "1.3+"
-        usage: "Refinement of automated diagrams, custom illustrations"
-        humanization_techniques:
-          - "Slight imperfections in line weights"
-          - "Manual path adjustments"
-          - "Texture overlays for paper-like appearance"
-        export_formats:
-          - "PDF with embedded fonts"
-          - "SVG for editing flexibility"
-          - "EPS for professional printing"
+The toolkit ensures that figures appear **human-designed, publication-ready, and compliant with academic formatting standards**, avoiding AI-generated aesthetics.
 
-  circuit_and_signal_processing:
-    tools:
-      - name: "LTspice"
-        version: "XVII"
-        usage: "Circuit schematics, simulation results"
+It is designed for use in:
 
-      - name: "MATLAB/Simulink"
-        version: "R2023b"
-        usage: "Signal flow graphs, control systems"
+- Research papers
+- PhD theses
+- Conference publications
+- Journal submissions
+- Technical reports
 
-        - name: "MATLAB/Simulink"
-          version: "R2023b"
-          usage: "Signal flow graphs, control systems"
-          
-        - name: "TikZ/LaTeX"
-          usage: "Precise mathematical diagrams, integration with equations"
-          packages:
-            - "circuitikz"
-            - "pgfplots"
-            - "tikz-cd"
+---
 
-economics_commerce_visualizations:
-    
-    data_analysis_diagrams:
-      tools:
-        - name: "R + ggplot2"
-          version: "4.3+"
-          libraries:
-            - "ggplot2"
-            - "ggrepel"
-            - "patchwork"
-            - "gridExtra"
-          humanization_approach:
-            - "Manual point positioning tweaks"
-            - "Custom theme development"
-            - "Selective transparency adjustments"
-            - "Hand-annotated elements in post-processing"
-            
-        - name: "Python + matplotlib/seaborn"
-          version: "3.8+"
-          libraries:
-            - "matplotlib"
-            - "seaborn"
-            - "plotly"
-            - "adjustText"
-          customization:
-            - "rcParams fine-tuning"
-            - "Custom colormaps"
-            - "Manual legend placement"
-            - "Axis label positioning refinement"
+## Core Principles
 
-market_analysis_frameworks:
-      tools:
-        - name: "Lucidchart"
-          features:
-            - "Template libraries"
-            - "Collaborative editing"
-            - "Export control options"
-          professional_touch:
-            - "Custom icon libraries"
-            - "Brand color implementation"
-            - "Consistent typography hierarchy"
+### Authenticity
+All diagrams must resemble **hand-crafted visuals produced by researchers** using tools such as Microsoft Visio, SmartPLS, PowerPoint, or Adobe Illustrator.
 
-interdisciplinary_tools:
-    
-    conceptual_framework_mapping:
-      primary_tool: "Miro"
-      features:
-        - "Whiteboard-style interface"
-        - "Template frameworks (SWOT, PESTEL, etc.)"
-        - "Integration capabilities"
-      publication_workflow:
-        - "Export to PDF at high resolution"
-        - "Vector editing in Illustrator/Inkscape"
-        - "Final touch-up for academic presentation"
-        
-network_and_relationship_diagrams:
-      tools:
-        - name: "Gephi"
-          version: "0.9.2"
-          applications: "Social networks, citation analysis, supply chains"
-          
-        - name: "Cytoscape"
-          version: "3.9+"
-          applications: "Biological pathways, complex system relationships"
-          
-        - name: "Graphviz"
-          applications: "Automated graph layout, programmatic generation"
+Key rules:
 
-professional_workflow_standards:
-    
-    file_management:
-      directory_structure:
-        - "raw_data/"
-        - "working_files/"
-        - "final_exports/"
-        - "version_control/"
-        - "supplementary_materials/"
-        
-      naming_convention: 
-        pattern: "{figure_number}_{description}_{version}.{extension}"
-        example: "fig_03_market_share_analysis_v04.pdf"
-      
-quality_assurance:
-      checklist:
-        - "Resolution check (minimum 600 DPI for print)"
-        - "Font embedding verification"
-        - "Color mode appropriate for medium (CMYK vs RGB)"
-        - "File size optimization without quality loss"
-        - "Accessibility compliance (alt text, contrast ratios)"
-        - "Cross-platform rendering consistency"
+- Avoid AI-style graphics
+- Maintain manual spacing and alignment
+- Use subtle imperfections typical of human-designed figures
 
-advanced_techniques:
-    
-    latex_integration:
-      tikz_methodology:
-        code_example: |
-          \begin{tikzpicture}[node distance=2cm]
-            \node[draw, rectangle] (input) {Input};
-            \node[draw, circle, right of=input] (process) {Process};
-            \node[draw, rectangle, right of=process] (output) {Output};
-            \draw[->] (input) -- (process);
-            \draw[->] (process) -- (output);
-          \end{tikzpicture}
-          
-      pgfplots_professional:
-        code_example: |
-          \begin{axis}[
-            xlabel={Time},
-            ylabel={Value},
-            title={Experimental Results},
-            grid=major,
-            width=12cm,
-            height=8cm
-          ]
-          \addplot+[smooth] table[x=time,y=value] {data.csv};
-          \end{axis}
+---
 
-hybrid_creation_process:
-      step_by_step:
-        1: "Data preparation and cleaning"
-        2: "Initial automated plot generation"
-        3: "Manual refinement and adjustment"
-        4: "Typography and styling enhancement"
-        5: "Integration with document workflow"
-        6: "Quality assurance and final export"
+### Publication Ready
 
-journal_submission_requirements:
-    
-    common_specifications:
-      ieee:
-        - "Vector formats preferred (PDF, EPS)"
-        - "Minimum 300 DPI for raster elements"
-        - "Fonts must be embedded"
-        - "Maximum width: 6.875 inches"
-        
-      nature:
-        - "High-resolution vector graphics"
-        - "Color figures at 300 DPI minimum"
-        - "Black and white versions required"
-        - "Supplementary figure files separately"
-        
-      elsevier:
-        - "EPS, PDF, or TIFF formats"
-        - "Color space specification required"
-        - "Figure captions as separate text"
-        - "Source files preservation"
+All visual outputs must meet **journal submission standards**, including:
 
-    cross_journal_compatibility:
-      universal_standards:
-        - "CMYK color mode for print journals"
-        - "RGB acceptable for online-only publications"
-        - "Open formats preferred over proprietary"
-        - "Version control documentation maintained"
-        
-expert_tips_for_humanization:
-  avoiding_automated_appearance:
-      techniques:
-        - "Introduce slight variations in element spacing"
-        - "Use non-uniform line weights intentionally"
-        - "Add hand-annotated elements in post-processing"
-        - "Include subtle texture overlays"
-        - "Avoid perfect geometric alignments"
-        - "Vary font weights and styles purposefully"
-        
-time_efficient_methods:
-      shortcuts:
-        - "Template libraries for common diagram types"
-        - "Style sheets for consistent appearance"
-        - "Batch processing for multiple similar figures"
-        - "Keyboard shortcuts mastery"
-        - "Pre-defined color palettes per discipline"
+- High resolution (minimum **600 DPI**)
+- Vector-friendly export formats
+- Clean typography
+- Minimal visual noise
 
-software_ecosystem:
-    
-    primary_suite:
-      vector_graphics: ["Inkscape", "Adobe Illustrator"]
-      diagramming: ["draw.io", "Lucidchart", "Miro"]
-      data_visualization: ["R/ggplot2", "Python/matplotlib"]
-      technical_drawing: ["TikZ/LaTeX", "Graphviz"]
-      
-complementary_tools:
-      image_editing: "GIMP"
-      pdf_management: "Adobe Acrobat Pro"
-      version_control: "Git with Git-LFS for large files"
-      collaboration: "Overleaf for LaTeX projects"
-      
-platform_consistency:
-      windows_optimized: "PowerPoint for quick mockups"
-      mac_optimized: "Keynote for presentation integration"
-      linux_friendly: "All open-source alternatives available"
+Preferred export formats:
 
-documentation_and_reproducibility:
-    
-    metadata_standards:
-      required_fields:
-        - "Creation date and author"
-        - "Software versions used"
-        - "Raw data sources"
-        - "Processing steps taken"
-        - "Final output specifications"
-        
-sharing_protocols:
-      git_repository_structure:
-        - "README.md explaining methodology"
-        - "requirements.txt or environment.yml"
-        - "source_data/ directory"
-        - "processing_scripts/ directory"
-        - "final_figures/ directory"
-        - "LICENSE file for reuse permissions"
+- **PDF (vector)**
+- **EPS (LaTeX compatible)**
+- **SVG (editable vector)**
+- **PNG 600 DPI**
 
-validation_checklist:
-    
-    pre_submission:
-      technical_validation:
-        - "File opens correctly on multiple systems"
-        - "Fonts render properly without substitution"
-        - "Colors display accurately across devices"
-        - "Resolution meets publisher requirements"
-        
-      content_validation:
-        - "Labels are clear and professionally formatted"
-        - "Legend explains all visual elements"
-        - "Scale and units are properly indicated"
-        - "Copyright permissions secured for any reused elements"
-        
-      accessibility_compliance:
-        - "Contrast ratios meet WCAG standards"
-        - "Alternative text descriptions provided"
-        - "Colorblind-friendly palette consideration"
-        - "Screen reader compatibility checked"
+---
+
+### Field Specific
+
+Visualization standards should match **disciplinary expectations**.
+
+Examples:
+
+| Field | Diagram Type |
+|------|------|
+| Marketing / Sustainability | Conceptual frameworks |
+| Management Research | Structural equation models |
+| Engineering | System architecture diagrams |
+| Data Science | Analytical pipelines |
+
+---
+
+### Reproducibility
+
+All figures must allow **transparent replication** during peer review.
+
+Requirements:
+
+- Clearly labelled constructs
+- Documented workflow
+- Version control of diagrams
+- Editable source files
+
+---
+
+# Engineering Visualizations
+
+## System Architecture Diagrams
+
+Used for illustrating **technical system designs, workflows, and component interactions**.
+
+---
+
+### Tool 1: draw.io (diagrams.net)
+
+**Version:** 20.3+
+
+**Usage**
+
+Ideal for:
+
+- System architecture diagrams
+- Flowcharts
+- Conceptual frameworks
+- Process pipelines
+
+**Humanization Techniques**
+
+To avoid AI-generated appearance:
+
+- Apply manual spacing adjustments
+- Slightly offset connector alignment
+- Use consistent but manually selected color palettes
+- Adjust arrow curvature manually
+
+**Recommended Color Style**
+
+Use muted academic palettes:
+
+| Element | Hex Code | Usage |
+|---------|----------|-------|
+| Primary | `#2E86AB` | Main components |
+| Secondary | `#A23B72` | Supporting elements |
+| Accent | `#F18F01` | Highlights |
+| Neutral | `#5C5C5C` | Text and borders |
+
+**Export Settings**
+
+- Resolution: 600 DPI (PNG)
+- Format: PDF vector
+- Fonts: Embedded
+- Size: Max 6.875 inches wide
+
+---
+
+### Tool 2: Inkscape
+
+**Version:** 1.3+
+
+**Usage**
+
+Best for:
+
+- Refining automated diagrams
+- Adding hand-drawn elements
+- Final polishing touches
+
+**Humanization Techniques**
+
+- Introduce slight imperfections in line weights
+- Manually adjust path smoothness
+- Add subtle texture overlays
+- Vary stroke opacity (95-100%)
+
+**Workflow Tips**
+
+1. Import base diagram from draw.io (SVG)
+2. Adjust node positions manually
+3. Modify stroke properties for organic feel
+4. Add hand-annotated notes if needed
+5. Export with embedded fonts
+
+---
+
+## Circuit and Signal Processing
+
+### LTspice
+
+**Version:** XVII
+
+**Usage**
+
+For:
+
+- Electronic circuit schematics
+- Simulation waveform outputs
+- Filter design illustrations
+
+**Professional Touch**
+
+- Use standard IEEE symbols
+- Label all components clearly
+- Include measurement points
+- Export waveforms at high resolution
+
+---
+
+### MATLAB/Simulink
+
+**Version:** R2023b
+
+**Usage**
+
+For:
+
+- Signal flow graphs
+- Control system block diagrams
+- Algorithm visualization
+
+**Export Best Practices**
+
+- Save as `.fig` for editing
+- Export to PDF with vector data
+- Use consistent line weights (0.5pt-1pt)
+- Include scale bars for measurements
+
+---
+
+### TikZ/LaTeX
+
+**Precision Drawing**
+
+Packages:
+
+- `circuitikz`: Electrical circuits
+- `pgfplots`: Data visualization
+- `tikz-cd`: Commutative diagrams
+
+**Example Code**
+
+```latex
+\begin{tikzpicture}[node distance=2cm]
+  \node[draw, rectangle] (input) {Input};
+  \node[draw, circle, right of=input] (process) {Process};
+  \node[draw, rectangle, right of=process] (output) {Output};
+  \draw[->] (input) -- (process);
+  \draw[->] (process) -- (output);
+\end{tikzpicture}
