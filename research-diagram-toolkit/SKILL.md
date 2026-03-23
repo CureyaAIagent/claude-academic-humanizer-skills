@@ -1,225 +1,252 @@
 ---
 name: research-diagram-toolkit
-description: Generates professional, publication-ready academic diagrams and figures that mimic manually created visuals used in peer-reviewed journals.
+display_name: Research Diagram Toolkit
+description: Comprehensive toolkit for creating publication-quality, human-designed academic diagrams that meet journal standards
+author: Research Toolkit Team
+version: 1.0.0
+tags:
+  - research
+  - academia
+  - diagrams
+  - visualization
+  - journal-publication
 ---
 
 # Research Diagram Toolkit
+## Crafting Journal-Grade Academic Diagrams Like a Pro
 
-## Purpose
+## 🔍 Overview
+This toolkit provides a comprehensive workflow for generating publication-quality, human-designed academic diagrams—the kind that top-tier journals expect. Whether you're crafting conceptual models, system architectures, or data visualizations, this guide ensures your figures look polished, professional, and peer-reviewed ready.
 
-Provides a structured workflow for creating **journal-grade academic diagrams** that replicate the visual style commonly found in peer-reviewed publications.
+## ✅ Core Principles of Journal-Grade Diagrams
 
-The toolkit ensures that figures appear **human-designed, publication-ready, and compliant with academic formatting standards**, avoiding AI-generated aesthetics.
+### 1. Authenticity
+Diagrams must mimic those made by researchers using tools like Visio, Illustrator, or Inkscape—not AI generators.
 
-It is designed for use in:
+Key aspects:
+- Manual spacing and alignment
+- Subtle imperfections (e.g., slightly uneven lines)
+- Realistic label placement and grouping
 
-- Research papers
-- PhD theses
-- Conference publications
-- Journal submissions
-- Technical reports
+### 2. Publication Readiness
+Meet strict journal requirements without fail.
 
----
+| Requirement | Standard |
+|-------------|----------|
+| Resolution | Minimum 300 DPI; preferred 600 DPI |
+| File Formats | PDF/EPS/SVG/TIFF |
+| Fonts | Arial / Times New Roman |
+| Line Weight | ≥0.5 pt |
 
-## Core Principles
+### 3. Field-Specific Conventions
+Match expectations based on discipline:
 
-### Authenticity
-All diagrams must resemble **hand-crafted visuals produced by researchers** using tools such as Microsoft Visio, SmartPLS, PowerPoint, or Adobe Illustrator.
+| Discipline | Common Diagram Types |
+|------------|---------------------|
+| Management | SEM path diagrams, process flows |
+| Engineering | Block diagrams, UML, circuit schematics |
+| Medicine/Biology | Biological pathways, PRISMA charts |
+| Social Sciences | Concept maps, thematic networks |
+| Computer Science | Neural net diagrams, architecture maps |
 
-Key rules:
-
-- Avoid AI-style graphics
-- Maintain manual spacing and alignment
-- Use subtle imperfections typical of human-designed figures
-
----
-
-### Publication Ready
-
-All visual outputs must meet **journal submission standards**, including:
-
-- High resolution (minimum **600 DPI**)
-- Vector-friendly export formats
-- Clean typography
-- Minimal visual noise
-
-Preferred export formats:
-
-- **PDF (vector)**
-- **EPS (LaTeX compatible)**
-- **SVG (editable vector)**
-- **PNG 600 DPI**
-
----
-
-### Field Specific
-
-Visualization standards should match **disciplinary expectations**.
-
-Examples:
-
-| Field | Diagram Type |
-|------|------|
-| Marketing / Sustainability | Conceptual frameworks |
-| Management Research | Structural equation models |
-| Engineering | System architecture diagrams |
-| Data Science | Analytical pipelines |
-
----
-
-### Reproducibility
-
-All figures must allow **transparent replication** during peer review.
+### 4. Reproducibility
+Enable reviewers to understand and replicate your logic.
 
 Requirements:
+- Labeled nodes and constructs
+- Version-controlled source files
+- Workflow documentation
+- Editable exports (e.g., SVG, .fig, .vsdx)
 
-- Clearly labelled constructs
-- Documented workflow
-- Version control of diagrams
-- Editable source files
+## 🧭 Complete List of Research Diagram Types
+Below is a categorized list of all major diagram types used across disciplines, grouped logically for clarity and usability.
 
----
+### A. Conceptual & Theoretical Diagrams
+Used in theory building and hypothesis development.
 
-# Engineering Visualizations
+| Type | Purpose |
+|------|---------|
+| Conceptual Framework | Show variable relationships |
+| Theoretical Framework | Link theories to constructs |
+| Research Model | Visualize proposed structure |
+| Hypothesis Model | Display testable propositions |
+| Path Diagram (SEM) | Structural equation modeling paths |
+| Causal Model | Cause-effect relationships |
 
-## System Architecture Diagrams
+### B. Methodology & Process Diagrams
+Explain how research was conducted.
 
-Used for illustrating **technical system designs, workflows, and component interactions**.
+| Type | Description |
+|------|-------------|
+| Research Methodology Flowchart | Steps involved in study execution |
+| Workflow Diagram | Task sequence within project |
+| Experimental Design Diagram | Layout of trials or interventions |
+| Pipeline Diagram (AI/ML) | Data processing stages |
+| System Architecture Diagram | Component interaction map |
 
----
+### C. Data Visualization Diagrams
+Present results effectively.
 
-### Tool 1: draw.io (diagrams.net)
+| Type | Use Case |
+|------|----------|
+| Bar Chart | Comparisons |
+| Line Graph | Trends over time |
+| Scatter Plot | Correlation |
+| Box Plot | Distribution summaries |
+| Heatmap | Multivariate patterns |
 
-**Version:** 20.3+
+### D. Structural & Relationship Diagrams
+Show connections between entities.
 
-**Usage**
+| Type | Application |
+|------|-------------|
+| ER Diagram | Database entity relations |
+| Network Diagram | Interconnected systems |
+| Hierarchy Diagram | Levels of organization |
+| Organizational Chart | Team structures |
 
-Ideal for:
+### E. Knowledge & Qualitative Diagrams
+Visualize ideas qualitatively.
 
-- System architecture diagrams
-- Flowcharts
-- Conceptual frameworks
-- Process pipelines
+| Type | Description |
+|------|-------------|
+| Concept Map | Hierarchical knowledge structures |
+| Mind Map | Idea brainstorming |
+| Thematic Map | Emerging themes in qualitative data |
 
-**Humanization Techniques**
+### F. Logical & Comparative Diagrams
+Support decision-making or comparisons.
 
-To avoid AI-generated appearance:
+| Type | Function |
+|------|----------|
+| Venn Diagram | Overlapping sets |
+| Decision Tree | Logical branching outcomes |
+| Matrix Diagram | Cross-tabular comparisons |
 
-- Apply manual spacing adjustments
-- Slightly offset connector alignment
-- Use consistent but manually selected color palettes
-- Adjust arrow curvature manually
+### G. Technical & Advanced Diagrams
+Used in STEM fields requiring precision.
 
-**Recommended Color Style**
+| Type | Application |
+|------|-------------|
+| UML Diagrams | Software design abstraction |
+| Block Diagram | Functional subsystem representation |
+| Neural Network Diagram | Deep learning model visualization |
+| Multi-Layer Architecture | Stacked model layers |
 
-Use muted academic palettes:
+### H. Review & Literature Diagrams
+Essential in systematic reviews.
 
-| Element | Hex Code | Usage |
-|---------|----------|-------|
-| Primary | `#2E86AB` | Main components |
-| Secondary | `#A23B72` | Supporting elements |
-| Accent | `#F18F01` | Highlights |
-| Neutral | `#5C5C5C` | Text and borders |
+| Type | Purpose |
+|------|---------|
+| PRISMA Flow Diagram | Study selection filtering |
+| Bibliometric Network | Citation network mapping |
+| Literature Mapping | Conceptual landscape |
 
-**Export Settings**
+## 🎨 Color Coding Standards for Academic Diagrams
+Top journals judge quality through visuals too.
 
-- Resolution: 600 DPI (PNG)
-- Format: PDF vector
-- Fonts: Embedded
-- Size: Max 6.875 inches wide
+### ✅ Recommended Palettes
 
----
+#### 1. Minimalist Professional Palette
+| Color Name | Hex Code | Usage |
+|------------|----------|-------|
+| Dark Blue | #1F4E79 | Main concepts |
+| Light Blue | #5B9BD5 | Secondary elements |
+| Grey | #7F7F7F | Labels, text |
 
-### Tool 2: Inkscape
+#### 2. Monochrome Scheme
+Perfect for IEEE, Elsevier technical papers.
 
-**Version:** 1.3+
+- Black (#000000)
+- White background (#FFFFFF)
+- Grayscale variants
 
-**Usage**
+#### 3. Colorblind-Friendly Palette
+Avoid red-green contrasts.
 
-Best for:
+| Color | Hex Code | Use Case |
+|-------|----------|----------|
+| Blue | #0072B2 | Independent variables |
+| Orange | #E69F00 | Mediators/moderators |
+| Teal | #009E73 | Dependent variables |
 
-- Refining automated diagrams
-- Adding hand-drawn elements
-- Final polishing touches
+⚠️ Never use neon colors or gradients unless specified.
 
-**Humanization Techniques**
+## 💡 Humanized Figures vs. AI-Style Diagrams
 
-- Introduce slight imperfections in line weights
-- Manually adjust path smoothness
-- Add subtle texture overlays
-- Vary stroke opacity (95-100%)
+| Feature | AI-Style (Bad) | Humanized (Good) |
+|---------|----------------|------------------|
+| Symmetry | Perfectly aligned | Slight asymmetry allowed |
+| Icons | Generic clipart | Custom-designed or domain-specific |
+| Labels | Generic terms ("X", "Y") | Real-world labels |
+| Layout | Template-based | Thoughtfully arranged |
+| Flow | Robotic | Logical progression visible |
+| Annotation Layer | Missing | Includes notes, equations, H labels |
 
-**Workflow Tips**
+## 📑 Journal Submission Checklist for Figures
+Before submitting, ensure compliance with these standards:
 
-1. Import base diagram from draw.io (SVG)
-2. Adjust node positions manually
-3. Modify stroke properties for organic feel
-4. Add hand-annotated notes if needed
-5. Export with embedded fonts
+### ✅ Technical Requirements
+| Item | Requirement |
+|------|-------------|
+| Resolution | ≥300 DPI (preferably 600) |
+| File Format | EPS/PDF/SVG/TIFF |
+| Font | Arial/Times/Helvetica |
+| Size After Scaling | Minimum 8–10 pt font size |
+| Line Thickness | At least 0.5 pt |
 
----
+### ✅ Structural Expectations
+| Item | Description |
+|------|-------------|
+| Self-Explanatory Figure | Should make sense without reading caption |
+| Caption Content | What? How? Why? |
+| Caption Example | "Figure 2. Proposed conceptual framework..." |
 
-## Circuit and Signal Processing
+## 🛠️ Recommended Tools for Creating Humanized Diagrams
 
-### LTspice
+| Tool | Strengths | Best For |
+|------|-----------|----------|
+| draw.io | Free, collaborative, easy export | Conceptual models, flowcharts |
+| Inkscape | Vector editing, hand-tuned details | Polishing diagrams from other tools |
+| Visio | Industry-standard tool | Professional layouts |
+| LaTeX/TikZ | Precision drawing, integration with LaTeX | Top-tier journals (especially IEEE) |
+| Adobe Illustrator | High-end customization | Final publishing polish |
+| BioRender | Biomedical templates | Biology/medicine papers |
+| MATLAB/Simulink | Technical plotting | Signal processing, algorithmic pipelines |
+| LTspice | Circuit simulation | Electronics engineering |
 
-**Version:** XVII
+## 🔥 High-Impact Design Principles (Q1 Journals)
 
-**Usage**
+1. **Visual Hierarchy**
+   Make key elements stand out via size, color, or position.
 
-For:
+2. **Alignment & Spacing**
+   Use grid-based layouts for consistency and readability.
 
-- Electronic circuit schematics
-- Simulation waveform outputs
-- Filter design illustrations
+3. **Simplicity Rule**
+   If it takes more than 10 seconds to grasp, simplify it.
 
-**Professional Touch**
+4. **One Message Per Figure**
+   Each diagram should convey one clear idea.
 
-- Use standard IEEE symbols
-- Label all components clearly
-- Include measurement points
-- Export waveforms at high resolution
+5. **Consistency Across Paper**
+   Maintain uniform styling across all figures, tables, and graphs.
 
----
+## 🧾 Final Journal-Ready Figure Checklist
+✅ Before submission, confirm:
 
-### MATLAB/Simulink
+| Item | Status |
+|------|--------|
+| Clear purpose of diagram | ✔️ |
+| Consistent color scheme | ✔️ |
+| Professional fonts | ✔️ |
+| High resolution (>300 DPI) | ✔️ |
+| Logical flow | ✔️ |
+| Informative caption | ✔️ |
+| No unnecessary decoration | ✔️ |
+| Domain-specific customization | ✔️ |
+| Complies with journal specs | ✔️ |
 
-**Version:** R2023b
 
-**Usage**
 
-For:
 
-- Signal flow graphs
-- Control system block diagrams
-- Algorithm visualization
-
-**Export Best Practices**
-
-- Save as `.fig` for editing
-- Export to PDF with vector data
-- Use consistent line weights (0.5pt-1pt)
-- Include scale bars for measurements
-
----
-
-### TikZ/LaTeX
-
-**Precision Drawing**
-
-Packages:
-
-- `circuitikz`: Electrical circuits
-- `pgfplots`: Data visualization
-- `tikz-cd`: Commutative diagrams
-
-**Example Code**
-
-```latex
-\begin{tikzpicture}[node distance=2cm]
-  \node[draw, rectangle] (input) {Input};
-  \node[draw, circle, right of=input] (process) {Process};
-  \node[draw, rectangle, right of=process] (output) {Output};
-  \draw[->] (input) -- (process);
-  \draw[->] (process) -- (output);
-\end{tikzpicture}
