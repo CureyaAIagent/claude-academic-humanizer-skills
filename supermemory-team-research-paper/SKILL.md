@@ -1,5 +1,5 @@
 ---
-name: research-validator-layer
+name: super-memory-team
 description: Complete academic validation with Mixtral 8x22B auditing, DOI resolution, citation integrity, plagiarism detection (<10%), and AI content monitoring.
 ---
 version: 1.5.0
