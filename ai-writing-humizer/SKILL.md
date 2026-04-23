@@ -338,4 +338,3 @@ disclaimer:
   statement: "This tool promotes ethical academic practices only. Users remain fully responsible for their work's integrity and must comply with all institutional policies regarding AI usage. The developers assume no liability for misuse of these guidelines."
   responsibility: "Users must independently verify all content meets academic integrity standards before submission."
   ethical_commitment: "Designed to enhance human creativity and critical thinking, not replace it."
-
