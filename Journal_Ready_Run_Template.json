@@ -1,0 +1,95 @@
+{
+  "run_meta": {
+    "run_id": "RUN-20260424-P009-FIIB",
+    "paper_id": "P009",
+    "journal_id": "J06",
+    "journal_name": "FIIB Business Review (SAGE Publications)",
+    "execution_mode": "full",
+    "created_utc": "2026-04-24T00:00:00Z",
+    "operator": "MASTER_CONTROLLER_AGENT",
+    "audit_report_reference": "P009_FIIB_AuditReport_v1"
+  },
+  "inputs": {
+    "manuscript_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\INPUT_Manuscript_JournalReady.docx",
+    "audit_prompt_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\PROJECT COMPLETED\\Pravin\\FIIB\\P009_FIIB_ManuscriptEnhancementPrompt.docx",
+    "authors_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\INPUT_AUTHORS.docx",
+    "journal_workflow_xlsx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Journal workflow Database.xlsx",
+    "controller_md": "C:\\Users\\hp\\Downloads\\journal-runtime\\controller.md",
+    "skill_md": "C:\\Users\\hp\\Downloads\\journal-runtime\\skill.md",
+    "memory_md": "C:\\Users\\hp\\Downloads\\journal-runtime\\memory.md",
+    "content_md": "C:\\Users\\hp\\Downloads\\journal-runtime\\content.md"
+  },
+  "reference_artifacts": {
+    "exemplar_amended_manuscript_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\PROJECT COMPLETED\\Pravin\\FIIB\\P009_J06_FIIB_Amended_Manuscript.docx",
+    "master_sop_md": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\Journal_Ready_Master_SOP.md",
+    "description": "exemplar_amended_manuscript_docx is the completed FIIB P009|J06 manuscript after prompt implementation; use for structural/formatting benchmark per Master SOP Audit Prompt Binding."
+  },
+  "author_metadata": {
+    "corresponding_author": {
+      "name": "TO_BE_FILLED",
+      "email": "TO_BE_FILLED",
+      "affiliation": "TO_BE_FILLED",
+      "orcid": "TO_BE_FILLED"
+    },
+    "authors": [
+      {
+        "name": "TO_BE_FILLED",
+        "affiliation": "TO_BE_FILLED",
+        "orcid": "TO_BE_FILLED",
+        "credit_roles": []
+      }
+    ]
+  },
+  "fixed_workflow": {
+    "phases_in_order": [
+      "phase_0_repository_ingestion",
+      "phase_1_audit_mapping",
+      "phase_2_journal_blueprint_extraction",
+      "phase_3_skill_execution_matrix",
+      "phase_4_scientific_amendment",
+      "phase_5_ai_plagiarism_reduction",
+      "phase_6_reference_and_doi_validation",
+      "phase_7_statistical_validation",
+      "phase_8_tables_figures_alignment",
+      "phase_9_language_polish",
+      "phase_10_final_compliance_and_scoring",
+      "phase_11_memory_and_traceability_update"
+    ],
+    "fixed_skills": [
+      "academic-paper-critical-analysis-toolkit",
+      "turnitin-2026-advanced-plagiarism-detection-system",
+      "ai-writing-humanizer",
+      "research-diagram-toolkit"
+    ],
+    "phase_skip_allowed": false
+  },
+  "targets": {
+    "journal_compliance_min_percent": 90,
+    "reviewer_readiness_min_percent": 90,
+    "desk_rejection_risk_max_percent": 5,
+    "ai_score_max_percent": 10,
+    "plagiarism_score_max_percent": 10,
+    "doi_coverage_target_percent": 100,
+    "citation_mapping_target_percent": 100
+  },
+  "outputs": {
+    "final_manuscript_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_MainArticle_JournalReady.docx",
+    "title_page_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_TitlePage.docx",
+    "cover_letter_docx": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_CoverLetter.docx",
+    "audit_report_docx_or_md": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_Audit_Report.md",
+    "amendment_log_md": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_Amendment_Log.md",
+    "compliance_report_json": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_compliance_report.json",
+    "reviewer_readiness_json": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_reviewer_readiness_score.json",
+    "desk_rejection_risk_json": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_desk_rejection_risk.json",
+    "figures_dir": "C:\\Users\\hp\\OneDrive\\Desktop\\MY PROJECT\\Pawan Kahatan - PHD\\Main Paper\\OUTPUT_figures"
+  },
+  "traceability": {
+    "require_amendment_log": true,
+    "require_phase_status": true,
+    "require_skill_usage_report": true,
+    "allow_unresolved_items": true,
+    "unresolved_items_must_be_reported": true,
+    "require_fiib_prompt_section_coverage": true,
+    "fiib_prompt_checklist_items": 20
+  }
+}
